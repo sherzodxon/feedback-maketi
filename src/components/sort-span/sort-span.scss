@@ -1,0 +1,18 @@
+.sort-span{
+    &:hover{
+        color: #AD1FEA
+    }
+    position: relative;
+    cursor: pointer;
+    &::before{
+        width: 16px;
+        height: 10px;
+        content: '';
+        position: absolute;
+        background: url("../../assets/images/ok.svg") no-repeat center center;
+        left: 180px;
+        top: calc(50% - 5px);
+        display: none;
+    }
+    
+}

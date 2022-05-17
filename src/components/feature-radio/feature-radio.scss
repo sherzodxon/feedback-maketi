@@ -1,0 +1,12 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+.feature-radio__input:checked + .feature-radio__text {
+    background: #4661E6;
+    color: #FFFFFF;
+
+}
+.feature-radio__text{
+    margin-right: 8px;
+    margin-bottom: 14px;
+}

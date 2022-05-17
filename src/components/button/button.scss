@@ -1,0 +1,20 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+.button {
+  @include reset-btn;
+  text-align: center;
+  display: block;
+  width: fit-content;
+  padding: 12px 24px;
+  border-radius: 10px;
+  background-color: $primary;
+  color: #F2F4FE;
+  font-weight: 700;
+  font-size: 14px;
+  transition: 0.1s ease all;
+
+  &:hover {
+    background-color: #C75AF6;
+  }
+}

@@ -1,0 +1,31 @@
+.feedback-container {
+    width: 730px;
+    margin: 0 auto;
+
+}
+
+.feedback-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    margin-top: 80px;
+}
+
+.comments-body {
+    width: 730px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    padding-bottom: 48px;
+}
+
+.comments-length {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.25px;
+    color: #3A4374;
+    padding-left: 32px;
+    padding-top: 24px;
+}

@@ -1,0 +1,45 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+.num-btn {
+    @include reset-btn;
+    position: relative;
+    padding: 10px;
+    padding-top: 26px;
+    padding-bottom: 8px;
+    background: #F2F4FE;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.180556px;
+    border-radius: 10px;
+    color: #3A4374;
+    cursor: pointer;
+
+    &::before {
+        width: 10px;
+        height: 8px;
+        content: '';
+        position: absolute;
+        background: url(../../assets/images/btn-top-blue.svg) no-repeat;
+        top: 14px;
+        left: calc(50% - 5px);
+    }
+
+    &:hover {
+        background: #CFD7FF;
+
+    }
+
+    &:active {
+        background: #4661E6;
+        color: #FFFFFF;
+
+        &::before {
+            background: url(../../assets/images/btn-white-bottom.svg) no-repeat center center;
+        }
+
+    }
+
+}

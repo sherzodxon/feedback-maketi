@@ -1,0 +1,56 @@
+.roadmap-span {
+    color: #647196;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 24px;
+
+    &::after {
+        width: 10px;
+        height: 10px;
+        content: '';
+        position: absolute;  
+        left: 195px;
+        top: 0;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 23px;
+    }
+    &::before{
+        width: 8px;
+        height: 8px;
+        content: '';
+        border-radius: 50%;
+        position: absolute;
+        top:6px;
+        left: 0;
+    }
+}
+.orange{
+    &::after{
+        content: '2';
+    }
+    &::before{
+        background: #F49F85;
+    }
+}
+.blue{
+    &::after{
+        content: '3';
+    }
+    &::before{
+        background: #AD1FEA;
+
+    }
+}
+.green{
+    &::after{
+        content: '1';
+    }
+    &::before{
+        background: #62BCFA;
+
+    }
+}

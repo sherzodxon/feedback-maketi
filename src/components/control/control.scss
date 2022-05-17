@@ -1,0 +1,42 @@
+.control-wrapper {
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.frontend-wrapper {
+    width: 255px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background: radial-gradient(128.88% 128.88% at 103.9% -10.39%, #E84D70 0%, #A337F6 53.09%, #28A7ED 100%) center no-repeat;
+    margin-bottom: 24px;
+}
+
+.frontend-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: -0.25px;
+    margin: 0;
+    padding: 0;
+    padding-top: 62px;
+    padding-left: 24px;
+}
+.frontend-text{
+    margin: 0;
+    padding: 0;
+    padding-left: 24px;
+    padding-bottom: 24px;
+}
+.feature-wrapper{
+    width: 255px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-bottom: 10px;
+    margin-bottom: 24px;
+}

@@ -1,0 +1,95 @@
+.add-container {
+    width: 540px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 63px;
+    margin-bottom: 187px;
+    position: relative;
+
+    &::after {
+        width: 56px;
+        height: 56px;
+        content: '';
+        position: absolute;
+        background: url(../../assets/images/add-feedback.png) no-repeat center center;
+        border-radius: 50%;
+        top: -28px;
+        left: 42px;
+    }
+}
+
+.feedback-title {
+    padding-top: 52px;
+    padding-left: 42px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: -0.333333px;
+    color: #3A4374;
+    margin-bottom: 40px;
+}
+
+.input-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.194444px;
+    color: #3A4374;
+    margin: 0;
+    margin-top: 24px;
+}
+
+.input-text {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #647196;
+}
+
+.add-form {
+    padding-left: 42px;
+}
+
+.add-feedback-wrapper {
+    width: 540px;
+    margin: 0 auto;
+    margin-top: 93px;
+}
+
+.add-feedback-input{
+    width: 456px;
+    height: 48px;
+    background: #F7F8FD;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #647196;
+}
+.add-input-button{
+    border: none;
+    width: 456px;
+    height: 48px;
+    background: #F7F8FD;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #647196;
+    padding-left: 24px;
+    text-align: left;
+    cursor: pointer;
+
+}
+.add-feedback-input-detail{
+    height: 96px;
+    margin-bottom: 32px;
+}
