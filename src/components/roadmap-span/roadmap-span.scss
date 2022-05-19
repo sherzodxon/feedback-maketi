@@ -30,7 +30,7 @@
 }
 .orange{
     &::after{
-        content: '2';
+        content: '';
     }
     &::before{
         background: #F49F85;
@@ -38,7 +38,7 @@
 }
 .blue{
     &::after{
-        content: '3';
+        content: '';
     }
     &::before{
         background: #AD1FEA;
@@ -47,10 +47,19 @@
 }
 .green{
     &::after{
-        content: '1';
+        content: '';
     }
     &::before{
         background: #62BCFA;
+
+    }
+}
+.red{
+    &::after{
+        content: '';
+    }
+    &::before{
+        background: #fadd01e6;
 
     }
 }

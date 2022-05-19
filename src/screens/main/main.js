@@ -3,10 +3,12 @@ import "../../components/sort-modal/sort-modal"
 import Card from "../../components/card/card";
 import Control from "../../components/control/control";
 import Header from "../../components/header/header";
-import { PostsContext } from "../../App";
+import { useData } from "../../contexts/data";
 
 const Main = () => {
-  const {posts} = useContext(PostsContext);
+  const {posts, setPosts} = useData();
+
+  
   return (
     <div className="container">
       <Control />

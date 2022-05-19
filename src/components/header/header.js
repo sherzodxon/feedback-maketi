@@ -1,22 +1,15 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { useData } from "../../contexts/data";
 import Button from "../button/button";
-import SortModal from "../sort-modal/sort-modal";
 import Sort from "../sort/sort";
 import "./header.scss"
 
 const Header=()=>{
 const [sortOpen, setSortOpen]= useState(false);
-const [posts ,setPosts]=useState(null);
+ const {posts ,setPosts} =useData();
 const sortOpenClick =()=>{
     setSortOpen(true)
 }
-useEffect(()=>{
-    fetch('/data.json')
-    .then(response=> response.json())
-    .then(data=>setPosts(data))
-   
-  },[]);
-
 return(
      <header className="header">
         <h2 className="header-text">{(posts ? posts.productRequests.length : 0) + " Suggestions"}</h2>
