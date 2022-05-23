@@ -13,7 +13,7 @@ const Card =({title,text,comment,feature,className="",like,id})=>{
         const changedPost={
            ...post,
            isLiked:!post.isLiked,
-           upvotes:post.isLiked? +post.upvotes-1:+post.upvotes+1,
+           upvotes:post.isLiked ? post.upvotes-1:post.upvotes+1,
 }
         const changedPostIndex = posts.productRequests.findIndex(product => product.id === +id);
         

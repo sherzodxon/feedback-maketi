@@ -16,7 +16,7 @@ function App() {
       <Route path="/" element={<Main />} />
       <Route path={`/feedback/:id`} element={<Feedback />} />
       <Route path="/add-feedback" element={<AddFeedback />} />
-      <Route path="/edit/:id" element={<EditFeedback />} />
+      <Route path={`/edit-feedback/:id`} element={<EditFeedback />} />
       <Route path="/kanban" element={<Kanban />} />
       <Route path="*" element={<NotFound />} />
     </Routes>

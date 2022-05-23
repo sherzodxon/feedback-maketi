@@ -1,0 +1,52 @@
+.sort__list {
+    position: absolute;
+    background: #FFFFFF;
+    color: #647196;
+    border-radius: 10px;
+    left: calc(50% + 50px);
+    top: 160px;
+    box-shadow: 0px 10px 40px -7px #373F6859;
+    list-style: none;
+    padding: 0;
+}
+
+.sort__item {
+    cursor: pointer;
+    padding-left: 24px;
+    padding-top: 12px;
+    border-bottom: 1px solid rgba(100, 113, 150,0.5);
+    padding-bottom: 12px;
+
+    &:last-child {
+        padding-bottom: 12px;
+        border-bottom: none;
+    }
+
+    &:hover {
+        cursor: pointer;
+        color: #AD1FEA;
+    }
+}
+
+.sort__option-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.sort__option-tick {
+    display: none;
+    width: 14px;
+    height: 10px;
+    background: url(../../assets/images/ok.svg) no-repeat center center;
+    margin-right: 24px;
+
+}
+.sort__option-radio:checked + .sort__option-tick{
+    display: block;
+}
+    .sort__list--opened{
+        display: none;
+    }

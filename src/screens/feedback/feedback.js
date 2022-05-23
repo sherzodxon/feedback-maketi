@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link, useParams } from "react-router-dom";
 import { PostsContext } from "../../App";
 import AddComment from "../../components/add-comment/add-comment";
+import BackButton from "../../components/back-button/back-button";
 import Button from "../../components/button/button";
 import Card from "../../components/card/card";
 import Comments from "../../components/comments/comments";
@@ -33,8 +34,8 @@ const CommentString =()=>{
   return (
     <div className="feedback-container">
       <header className="feedback-header">
-      <Link to={"/"} className="add-back-button" children="Go Back"/>
-      <Button to="./edit-feedback" children="Edit Feedback" />
+      <BackButton to={"/"}  children="Go Back"/>
+      <Link className="button" to={`/edit-feedback/${id}`} children="Edit Feedback" />
       </header>
       <Card className="feedback-card" title={post.title} text={post.decription} like={post.upvotes} feature
       ={post.category} key={post.id} comment={post.comments} id={post.id} />

@@ -1,6 +1,5 @@
 @import "../../sass/mixins";
-
-.add-container {
+.edit-container {
     width: 540px;
     background: #FFFFFF;
     border-radius: 10px;
@@ -13,7 +12,7 @@
         height: 56px;
         content: '';
         position: absolute;
-        background: url(../../assets/images/add-feedback.png) no-repeat center center;
+        background: url(../../assets/images/edit.svg) no-repeat center center;
         border-radius: 50%;
         top: -28px;
         left: 42px;
@@ -50,17 +49,17 @@
     color: #647196;
 }
 
-.add-form {
+.edit-form {
     padding-left: 42px;
 }
 
-.add-feedback-wrapper {
+.edit-feedback-wrapper {
     width: 540px;
     margin: 0 auto;
     margin-top: 93px;
-}
+} 
 
-.add-feedback-input {
+.edit-feedback-input{
     max-width: 456px;
     min-width: 456px;
     height: 48px;
@@ -74,13 +73,11 @@
     line-height: 20px;
     color: #647196;
     padding: 24px;
-
-    &:focus {
-        border: none;
+    &:focus{
+        border:none;
     }
 }
-
-.add-input-button {
+.edit-input-button{
     border: none;
     width: 456px;
     height: 48px;
@@ -96,48 +93,36 @@
     padding-left: 24px;
     text-align: left;
     cursor: pointer;
-}
+    
 
-.add-feedback-input-detail {
+}
+.edit-feedback-input-detail{
     height: 96px;
     margin-bottom: 32px;
 }
-
-.dark-button {
+.dark-button{
     background: rgba(58, 67, 116, 1);
     margin-right: 16px;
-
-    &:hover {
+    &:hover{
         background: #647196;
     }
-
+    
 }
-
-.add-button-wrapper {
+.edit-button-wrapper{
     width: 253px;
     display: flex;
     align-items: center;
-    margin-top: 0;
+}
+.danger-button{
+    background: #D73737;    
+    &:hover{
+        background: #bb5c5c;
+    }
+}
+.editing-button-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 42px;
     padding-bottom: 40px;
-    margin-left: auto;
-    margin-right: 40px;
 }
-
-.danger-button {
-    background: #D73737;
-}
-.add-option-list {
-    display: block;
-    list-style: none;
-    box-shadow: 0px 10px 40px -7px rgba(55, 63, 104, 0.350492);
-    border-radius: 10px;
-    padding: 0;
-    position: absolute;
-    z-index: 99;
-    background: #FFFFFF;
-
-}
-.sort__list--opened{
-    display: none;
-}
-
