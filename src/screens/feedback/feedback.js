@@ -15,13 +15,10 @@ const Feedback = () => {
   const { id } = useParams();
   
    let post = posts.productRequests.find(post => post.id ===+id)
-
+ 
    const commentLength = post.comments ? post.comments.length : 0
 
-  //  const replies = post.comments? post.comments.map(reply=> reply.replies):[]
-  //  const repliesLength = replies? replies.length :0
-  //   const count = commentLength+repliesLength;
-
+  
 const CommentString =()=>{
   if(commentLength==1 || commentLength==0 ) {
     return "Comment"
@@ -30,6 +27,7 @@ const CommentString =()=>{
     return "Comments"
   }
 }
+
 
   return (
     <div className="feedback-container">
@@ -44,7 +42,7 @@ const CommentString =()=>{
        {post.comments? post.comments.map((comment)=> <Comments  className="comments-row" key={comment.id} text={comment.content} image={comment.user.image} name={comment.user.name} userName={comment.user.username} />):""}
         {/* {replies && replies.map((reply)=> <Replies img={reply.user.image} userName={reply.user.name} userEmail={reply.user.username} userReply={reply.replyingTo} userText={reply.content} />)} */}
       </div>
-      <AddComment/>
+      <AddComment id={id}/>
     </div>
   );
 }

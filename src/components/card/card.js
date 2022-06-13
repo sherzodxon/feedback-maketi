@@ -9,7 +9,7 @@ const Card =({title,text,comment,feature,className="",like,id})=>{
     const {posts, setPosts}= useData(); 
 
     let post = posts.productRequests.find(post => post.id ===+id)
-    const BtnClick=(evt)=>{
+    const BtnClick=()=>{
         const changedPost={
            ...post,
            isLiked:!post.isLiked,

@@ -56,7 +56,7 @@ const handleOptionChange = (evt) => {
             return 0
         }
       })
-    }
+    } 
   });
 
 }

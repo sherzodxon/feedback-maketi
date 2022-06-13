@@ -169,7 +169,7 @@ const handleStatusChange =(evt)=>{
             <textarea type="text" defaultValue={post.description} ref={descriptionRef} className="edit-feedback-input edit-feedback-input-detail"   />
           </label>
           <div className="editing-button-wrapper">
-          <Button className="danger-button" to="/" onClick={deletePosts} children="Delete"/>
+          <Button className="danger-button" to="/     " onClick={deletePosts} children="Delete"/>
           <div className="edit-button-wrapper">
           <Button to={`/feedback/${id}`}  className="dark-button" children="Cancel"/>
           <Button  to={`/feedback/${id}`} children ="Add Feedback" />

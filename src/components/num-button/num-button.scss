@@ -17,6 +17,8 @@
     color: #3A4374;
     cursor: pointer;
     margin-left: 32px;
+    min-width: 40px;
+    max-width: 40px;
 
     &::before {
         width: 10px;
