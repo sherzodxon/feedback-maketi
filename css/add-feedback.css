@@ -1,0 +1,146 @@
+.add-container {
+  width: 540px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin-top: 63px;
+  margin-bottom: 187px;
+  position: relative;
+}
+
+.add-container::after {
+  width: 56px;
+  height: 56px;
+  content: '';
+  position: absolute;
+  background: url(../../assets/images/add-feedback.png) no-repeat center center;
+  border-radius: 50%;
+  top: -28px;
+  left: 42px;
+}
+
+.feedback-title {
+  padding-top: 52px;
+  padding-left: 42px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: -0.333333px;
+  color: #3A4374;
+  margin-bottom: 40px;
+}
+
+.input-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.194444px;
+  color: #3A4374;
+  margin: 0;
+  margin-top: 24px;
+}
+
+.input-text {
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #647196;
+}
+
+.add-form {
+  padding-left: 42px;
+}
+
+.add-feedback-wrapper {
+  width: 540px;
+  margin: 0 auto;
+  margin-top: 93px;
+}
+
+.add-feedback-input {
+  max-width: 456px;
+  min-width: 456px;
+  height: 48px;
+  background: #F7F8FD;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #647196;
+  padding: 24px;
+}
+
+.add-feedback-input:focus {
+  border: none;
+}
+
+.add-input-button {
+  border: none;
+  width: 456px;
+  height: 48px;
+  background: #F7F8FD;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #647196;
+  padding-left: 24px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.add-feedback-input-detail {
+  height: 96px;
+  margin-bottom: 32px;
+}
+
+.dark-button {
+  background: #3a4374;
+  margin-right: 16px;
+}
+
+.dark-button:hover {
+  background: #647196;
+}
+
+.add-button-wrapper {
+  width: 253px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.danger-button {
+  background: #D73737;
+}
+
+.add-option-list {
+  display: block;
+  list-style: none;
+  -webkit-box-shadow: 0px 10px 40px -7px rgba(55, 63, 104, 0.350492);
+          box-shadow: 0px 10px 40px -7px rgba(55, 63, 104, 0.350492);
+  border-radius: 10px;
+  padding: 0;
+  position: absolute;
+  z-index: 99;
+  background: #FFFFFF;
+}
+
+.sort__list--opened {
+  display: none;
+}
+/*# sourceMappingURL=add-feedback.css.map */

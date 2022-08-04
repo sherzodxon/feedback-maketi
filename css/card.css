@@ -1,0 +1,85 @@
+.card-body {
+  width: 825px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-button {
+  margin: 0;
+  margin-left: 32px;
+  margin-top: 28px;
+  margin-bottom: auto;
+}
+
+.card-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: #3A4374;
+  margin-top: 28px;
+}
+
+.card-title:hover {
+  color: #8997dc;
+}
+
+.card-text {
+  margin: 0;
+  margin-top: 4px;
+}
+
+.card-feature {
+  margin: 0;
+  margin-top: 12px;
+  margin-bottom: 28px;
+}
+
+.card-feature:hover {
+  background: #F2F4FF;
+  cursor: auto;
+}
+
+.comment-length {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: -0.222222px;
+  color: #3A4374;
+  position: relative;
+  margin: 0;
+  margin-right: 32px;
+}
+
+.comment-length::after {
+  width: 20px;
+  height: 18px;
+  content: '';
+  background: url(../../assets/images/comment.svg) no-repeat center center;
+  position: absolute;
+  right: 18px;
+  top: 3px;
+}
+
+.card-text-body {
+  margin-left: 40px;
+  margin-right: auto;
+  padding-top: 28px;
+}
+
+.feedback-card {
+  width: 730px;
+}
+/*# sourceMappingURL=card.css.map */

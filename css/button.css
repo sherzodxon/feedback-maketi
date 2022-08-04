@@ -1,0 +1,28 @@
+.button {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 12px 24px;
+  border-radius: 10px;
+  background-color: #AD1FEA;
+  color: #F2F4FE;
+  font-weight: 700;
+  font-size: 14px;
+  -webkit-transition: 0.1s ease all;
+  transition: 0.1s ease all;
+}
+
+.button:hover {
+  background-color: #C75AF6;
+}
+/*# sourceMappingURL=button.css.map */

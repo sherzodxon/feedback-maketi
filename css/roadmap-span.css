@@ -1,0 +1,64 @@
+.roadmap-span {
+  color: #647196;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 24px;
+}
+
+.roadmap-span::after {
+  width: 10px;
+  height: 10px;
+  content: '';
+  position: absolute;
+  left: 195px;
+  top: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.roadmap-span::before {
+  width: 8px;
+  height: 8px;
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+
+.orange::after {
+  content: '';
+}
+
+.orange::before {
+  background: #F49F85;
+}
+
+.blue::after {
+  content: '';
+}
+
+.blue::before {
+  background: #AD1FEA;
+}
+
+.green::after {
+  content: '';
+}
+
+.green::before {
+  background: #62BCFA;
+}
+
+.red::after {
+  content: '';
+}
+
+.red::before {
+  background: #fadd01e6;
+}
+/*# sourceMappingURL=roadmap-span.css.map */

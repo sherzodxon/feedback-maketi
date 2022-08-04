@@ -1,0 +1,104 @@
+.header {
+  width: 825px;
+  background: #373F68;
+  color: #fff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.header-button {
+  margin-right: 24px;
+}
+
+.header-text {
+  margin-left: 63px;
+  position: relative;
+}
+
+.header-text::after {
+  width: 23px;
+  height: 24px;
+  content: "";
+  position: absolute;
+  background: url(../../assets/images/logo.svg) no-repeat center center;
+  bottom: calc(50% - 12px);
+  left: -40px;
+}
+
+.button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 38px;
+  margin-right: auto;
+}
+
+.button-wrapper-text {
+  margin-right: 5px;
+  color: #F2F4FE;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+.sort-button-active {
+  border: none;
+  background-color: transparent;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #F2F4FE;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  cursor: pointer;
+  position: relative;
+}
+
+.sort-button-active::after {
+  width: 10px;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background: url(../../assets/images/check-open.svg) no-repeat center center;
+  top: 10px;
+  right: -9px;
+}
+
+.sort-button-close {
+  border: none;
+  background-color: transparent;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #F2F4FE;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  cursor: pointer;
+  position: relative;
+}
+
+.sort-button-close::after {
+  width: 10px;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background: url(../../assets/images/check-close.svg) no-repeat center center;
+  top: 10px;
+  right: -9px;
+}
+/*# sourceMappingURL=header.css.map */

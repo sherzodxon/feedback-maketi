@@ -1,0 +1,48 @@
+.add-comment-body {
+  width: 730px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin-bottom: 129px;
+}
+
+.add-comment-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: #3A4374;
+  padding-left: 34px;
+  padding-top: 24px;
+}
+
+.add-comment-input {
+  width: 664px;
+  margin-left: 34px;
+  padding-bottom: 42px;
+  padding-top: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #8C92B3;
+  border: none;
+  background: #F7F8FD;
+  border-radius: 5px;
+}
+
+.add-comment-bottom {
+  margin-left: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 16px;
+  margin-right: 34px;
+  padding-bottom: 32px;
+}
+/*# sourceMappingURL=add-comment.css.map */

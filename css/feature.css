@@ -1,0 +1,23 @@
+.feature {
+  color: #4661E6;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  padding: 6px 16px;
+  background: #F2F4FF;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.feature:hover {
+  background: #CFD7FF;
+}
+
+.feature :checked {
+  background: #4661E6;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=feature.css.map */
