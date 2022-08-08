@@ -18,3 +18,15 @@
     background-color: #C75AF6;
   }
 }
+@media only screen and(max-width:900px){
+  .button{
+  padding: 8px 18px;
+  font-size: 12px;
+  }
+}
+@media only screen and(max-width:360px){
+.button{
+  padding: 5px 14px;
+  font-size: 10px;
+}
+}

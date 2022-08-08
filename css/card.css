@@ -82,4 +82,44 @@
 .feedback-card {
   width: 730px;
 }
+
+@media only screen and (max-width: 1150px) {
+  .card-body {
+    width: 870px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .card-body {
+    width: 670px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .card-body {
+    width: 570px;
+  }
+  .card-text {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card-body {
+    width: 470px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    position: relative;
+  }
+  .comment-length {
+    position: absolute;
+    bottom: 33px;
+    right: 24px;
+  }
+  .card-feature {
+    margin-bottom: 72px;
+  }
+}
 /*# sourceMappingURL=card.css.map */

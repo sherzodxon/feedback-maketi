@@ -40,3 +40,21 @@
     margin: 0;
     height: 28px;
 }
+@media only screen and(max-width:900px){
+.roadmap-wrapper{
+    width: 215px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+}
+@media only screen and(max-width:700px){
+    .roadmap-wrapper{
+        width: 175px;
+    }
+}
+@media only screen and(max-width:600px){
+.roadmap-wrapper{
+    width: 223px;
+    margin-left: 24px;
+}
+}

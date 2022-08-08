@@ -13,10 +13,11 @@ body {
   line-height: 1.5;
   background-color: #F2F2F2;
   color: #647196;
-}
 
+}
+ 
 a {
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .visually-hidden {
@@ -28,10 +29,59 @@ a {
   white-space: nowrap;
   width: 1px;
 }
-.container{
-  margin:  0 auto;
-  padding: 0 165px;
+
+.container {
+  margin: 0 auto;
+  padding: 0 115px;
   padding-top: 90px;
   display: flex;
-  align-items:flex-start;
+  align-items: flex-start;
+}
+
+@media only screen and(max-width:1250px) {
+  .container {
+    padding: 0 50px;
+    padding-top: 30px;
+  }
+}
+
+@media only screen and(max-width:1200px) {
+  .container {
+    padding: 0 30px;
+    padding-top: 30px;
+  }
+}
+
+@media only screen and(max-width:1150px) {
+  .container {
+    width: 900px;
+    padding: 15px;
+    padding-top: 30px;
+    flex-direction: column;
+  }
+}
+@media only screen and(max-width:900px){
+.container{
+  width: 700px;
+}
+}
+@media only screen and(max-width:700px){
+  .container{
+    width: 600px;
+  }
+}
+@media only screen and(max-width:600px){
+  .container{
+    width: 600px;
+    padding-top: 0;
+    position: relative;
+    padding: 0;
+  }
+  
+}
+@media only screen and(max-width:550px){
+  .container{
+    width: 100%;
+  }
+  
 }

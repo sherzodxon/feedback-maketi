@@ -16,6 +16,8 @@
   color: #FFFFFF;
   background: radial-gradient(128.88% 128.88% at 103.9% -10.39%, #E84D70 0%, #A337F6 53.09%, #28A7ED 100%) center no-repeat;
   margin-bottom: 24px;
+  height: 216px;
+  position: relative;
 }
 
 .frontend-title {
@@ -27,6 +29,28 @@
   padding: 0;
   padding-top: 62px;
   padding-left: 24px;
+}
+
+.frontend-button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 27px;
+  right: 28px;
+  width: 20px;
+  height: 17px;
+  background: url(../../assets/images/hamburger-button.svg) center center no-repeat;
+}
+
+.frontend-button--active {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 27px;
+  right: 28px;
+  width: 20px;
+  height: 17px;
+  background: url(../../assets/images/button-x.svg) center center no-repeat;
 }
 
 .frontend-text {
@@ -46,5 +70,162 @@
   padding-left: 24px;
   padding-bottom: 10px;
   margin-bottom: 24px;
+  height: 216px;
+}
+
+.black-wrapper--active {
+  position: absolute;
+  background: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  top: 128px;
+  width: 470px;
+  height: 100vh;
+  z-index: 20;
+}
+
+.hamburger-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (max-width: 1150px) {
+  .control-wrapper {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+  .hamburger-wrapper {
+    width: calc(100% - 310px);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: auto;
+  }
+  .feature-wrapper {
+    margin-bottom: 0;
+  }
+  .frontend-wrapper {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .frontend-wrapper {
+    width: 215px;
+  }
+  .hamburger-wrapper {
+    width: calc(100% - 228px);
+    margin-left: auto;
+  }
+  .frontend-title {
+    padding-top: 133px;
+    font-size: 18px;
+    padding-left: 18px;
+  }
+  .frontend-text {
+    font-size: 15px;
+  }
+  .frontend-text {
+    padding-left: 18px;
+  }
+  .feature-wrapper {
+    width: 215px;
+    padding-left: 18px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .feature-wrapper,
+  .frontend-wrapper {
+    width: 175px;
+  }
+  .hamburger-wrapper {
+    width: calc(100% - 198px);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .frontend-title {
+    font-size: 16px;
+  }
+  .frontend-text {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hamburger-wrapper {
+    display: none;
+  }
+  .hamburger-wrapper--active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 72px;
+    background: #F7F8FD;
+    z-index: 99;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 271px;
+    height: 100vh;
+    right: 15px;
+  }
+  .card-hidden {
+    overflow: hidden;
+    height: 100%;
+  }
+  .feature-wrapper {
+    width: 223px;
+    margin-left: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .frontend-wrapper {
+    width: 470px;
+    margin-bottom: 0;
+    border-radius: 0px;
+    height: 72px;
+  }
+  .frontend-title {
+    margin-top: 16px;
+    padding-top: 0;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.1875px;
+    color: #FFFFFF;
+  }
+  .frontend-text {
+    margin-bottom: 16px;
+    padding-bottom: 0;
+  }
+  .control-wrapper {
+    margin-bottom: 0;
+  }
 }
 /*# sourceMappingURL=control.css.map */

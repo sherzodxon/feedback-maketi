@@ -67,6 +67,8 @@
     background: #4661E6;
     color: #FFFFFF;
     margin-left: 32px;
+    max-width: 40px;
+    min-width: 40px;
 
     &::before {
         width: 10px;
@@ -82,4 +84,23 @@
     &:hover{
         background: #3A4374;
     }
+}
+@media only screen and(max-width:600px){
+.num-btn{
+    position: absolute;
+    max-width: 69px;
+    min-width: 69px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    padding-left: 34px;
+    padding-right: 6px;
+    left: 40px;
+    bottom: 24px;
+    &::before{
+        left: 16px;
+        top: 13px;
+    }
+
+}
 }

@@ -8,16 +8,18 @@ const Main = () => {
 
   
   return (
+  
     <div className="container">
       <Control />
       <main>
-    <Header />
-      <div>
+     <Header />
+      <div >
       {posts && posts.productRequests.map((post)=> <Card title={post.title} text={post.description} like={post.upvotes} feature
-      ={post.category} key={post.id} comment={post.comments} id={post.id}/>)}
+      ={post.category} key={post.id} comment={post.comments} id={post.id} className="card-hidden"/>)}
       </div>
       </main>
     </div>
+    
   );
 }
 
