@@ -72,7 +72,6 @@ return(
        className="sort__list header-sort"
        open={sortOpen} 
        close={setSortOpen}
-       width="255px"
        name="sort"
        defaultValue={sortValue}
        options={sortOptions}

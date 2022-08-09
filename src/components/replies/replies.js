@@ -4,7 +4,7 @@ const Replies =(img,userName,userEmail,userReply,userText)=>{
     <div className="comments-replies">
         <div className="comments-header">
             <div className="user-wrapper">
-             <img className="user-img" src={img} alt="img" />
+             <div className="user-image"></div>
              <div className="user-status">
                  <h4 className="user-name">{userName}</h4>
                  <p className="user-email-name">{userEmail}</p>

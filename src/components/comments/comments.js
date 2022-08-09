@@ -4,7 +4,7 @@ const Comments =({className="", text,image,userName,name})=>{
      <div className={"comments " +className}>
          <div className="comments-header">
              <div className="user-wrapper">
-              <img className="user-img" src={image} alt="img" />
+              <div className="user-image"></div>
               <div className="user-status">
                   <h4 className="user-name">{name}</h4>
                   <p className="user-email-name">{userName}</p>

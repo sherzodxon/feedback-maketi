@@ -72,9 +72,13 @@
             width: 87%;
         }
         .maximum-text{
-            font-size: 13px;
+            font-size: 10px;
         }
         
         
     }
-    
+    @media only screen and(max-width:450px){
+        .add-comment-input,.add-comment-bottom{
+            width: 85%;
+        } 
+    }
