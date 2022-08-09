@@ -60,8 +60,7 @@
 } 
 
 .edit-feedback-input{
-    max-width: 456px;
-    min-width: 456px;
+    width: 91%;
     height: 48px;
     background: #F7F8FD;
     border: none;
@@ -119,10 +118,76 @@
         background: #bb5c5c;
     }
 }
+.edit-cancel-button{
+    margin-left: 110px;
+}
 .editing-button-wrapper{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-right: 42px;
     padding-bottom: 40px;
+}
+@media only screen and(max-width:600px){
+    .edit-feedback-wrapper,.edit-container{
+        width: calc(100% - 48px);
+    }
+    .edit-feedback-input{
+        width: 93%;
+    }
+    .edit-container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .back-button{
+        margin-left: 24px;
+    }
+    .edit-feedback-wrapper{
+        margin-top: 30px;
+    }
+    .edit-form{
+        padding-left: 24px;
+    }
+    .edit-feedback-input{
+        width: 93%;
+        padding-left: 16px;
+    }
+    .feedback-title{
+        padding-left: 24px;
+        padding-right: 23px;
+    }
+    .edit-container{
+        &::after{
+            left: 24px;
+        }
+    }
+    .editing-button-wrapper{
+        width: 93%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-left: 0;
+        padding: 0;
+        flex-direction: column-reverse;
+        padding-bottom: 24px;
+
+    }
+    .edit-cancel-button{
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 16px;
+    }
+    .dark-button{
+        margin-right: 0;
+    }
+    .edit-save-button{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .edit-feedback-input-detail{
+        padding-top: 16px;
+    }
+    .danger-button{
+        width: 100%;
+    }
 }

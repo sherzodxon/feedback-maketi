@@ -28,14 +28,13 @@ const CommentString =()=>{
   }
 }
 
-
   return (
     <div className="feedback-container">
       <header className="feedback-header">
       <BackButton to={"/"}  children="Go Back"/>
       <Link className="button" to={`/edit-feedback/${id}`} children="Edit Feedback" />
       </header>
-      <Card className="feedback-card" title={post.title} text={post.decription} like={post.upvotes} feature
+      <Card className="feedback-card" title={post.title} text={post.description} like={post.upvotes} feature
       ={post.category} key={post.id} comment={post.comments} id={post.id} />
       <div className="comments-body">
         <p className="comments-length">{commentLength+` ${CommentString()}`}</p>

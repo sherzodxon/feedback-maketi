@@ -16,7 +16,7 @@
 }
 
 .add-comment-input {
-    width: 664px;
+    width: 90%;
     margin-left: 34px;
     padding-bottom: 42px;
     padding-top: 16px;
@@ -36,8 +36,45 @@
 .add-comment-bottom{
    margin-left: 34px;
    display: flex;
+   align-items: center;
    justify-content: space-between;
    margin-top: 16px;
    margin-right: 34px;
    padding-bottom: 32px;
 }
+@media only screen and(max-width:900px){
+    .add-comment-body{
+        width: 670px;
+    }
+    }
+    @media only screen and(max-width:700px){
+        .add-comment-body{
+            width: 570px;
+        }
+        .add-comment-title{
+            padding-left: 23px;
+        }
+        .add-comment-input{
+            margin-left: 23px;
+        }
+        .add-comment-bottom{
+            margin-left: 23px;
+        }
+    }
+    @media only screen and(max-width:600px){
+        .add-comment-body{
+            width:calc(100% - 48px);
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        .add-comment-input,.add-comment-bottom{
+            width: 87%;
+        }
+        .maximum-text{
+            font-size: 13px;
+        }
+        
+        
+    }
+    

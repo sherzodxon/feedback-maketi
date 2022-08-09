@@ -70,9 +70,7 @@
     margin-right: auto;
     padding-top: 28px;
 }
-.feedback-card{
-    width: 730px;
-}
+
 @media only screen and(max-width:1150px){
     .card-body{
         width: 870px;
@@ -88,7 +86,12 @@
         width: 570px;
     }
     .card-text{
-        width: 70%;
+        width: 85%;
+        
+    }
+    .card-text-body{
+        margin-left: 25px;
+        padding-top: 24px;
     }
 }
 @media only screen and(max-width:600px){
@@ -101,8 +104,9 @@
     }
     .comment-length{
         position: absolute;
-        bottom: 33px;
+        bottom: 31px;
         right: 24px;
+        margin-right: 7px;
     }
     .card-feature{
         margin-bottom: 72px;

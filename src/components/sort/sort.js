@@ -2,7 +2,7 @@ import "./sort.scss"
 const Sort = ({width="300px",options,name,defaultValue,open,onChange,className="" })=>{
  
  return(
-    <ul style={{width}} onChange={onChange} className={`${className} ${open ? "":"sort__list--opened"}`}>
+    <ul  onChange={onChange} className={`${className} ${open ? "":"sort__list--opened"}`}>
     {
       options.map(option => (
         <li key={option.value} className={"sort__item"}>

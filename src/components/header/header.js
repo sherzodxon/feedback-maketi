@@ -69,7 +69,7 @@ return(
         </div>
         <Button to="./add-feedback" children="+ Add Feedback" className="header-button"/>
        < Sort  
-       className="sort__list"
+       className="sort__list header-sort"
        open={sortOpen} 
        close={setSortOpen}
        width="255px"

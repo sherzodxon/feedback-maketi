@@ -1,3 +1,14 @@
+@keyframes hamburgerLeft {
+    0%{
+        transform: translateX(100%);
+    }
+   90%{
+    transform: translateX(-5%);
+   }
+    100%{
+        transform: translateX(0);
+    }
+}
 .control-wrapper {
     width: 255px;
     display: flex;
@@ -28,6 +39,7 @@
 }
 
 .frontend-button {
+    display: none;
     background-color: transparent;
     border: none;
     position: absolute;
@@ -169,6 +181,9 @@
     .hamburger-wrapper {
         display: none;
     }
+    .frontend-button{
+        display: block;
+    }
 
     .hamburger-wrapper--active {
         display: flex;
@@ -180,6 +195,7 @@
         width: 271px;
         height: 100vh;
         right: 0px;
+        animation:hamburgerLeft  ease 1000ms;
     }
     .card-hidden{
         overflow: hidden;

@@ -3,7 +3,9 @@
     margin: 0 auto;
 
 }
-
+.feedback-card{
+    width: 730px;
+}
 .feedback-header {
     display: flex;
     justify-content: space-between;
@@ -28,4 +30,60 @@
     color: #3A4374;
     padding-left: 32px;
     padding-top: 24px;
+}
+
+@media only screen and(max-width:900px){
+.feedback-card,.comments-body,.comments,.feedback-header,.feedback-container{
+    width: 670px;
+}
+}
+@media only screen and(max-width:700px){
+    .feedback-card,.comments-body,.comments,.feedback-header{
+        width: 570px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+   
+    .feedback-container{
+        width: 570px;
+    }
+    .feedback-header{
+        margin-top: 40px;
+    }
+    .comments-length{
+        padding-left: 23px;
+    }
+    .comments{
+        margin: 0;
+        padding-left: 23px;
+        padding-right: 0;
+    }
+}
+@media only screen and(max-width:600px){
+    .feedback-card{
+        width:calc(100% - 48px);
+        flex-direction: column-reverse;
+        position: relative;
+    }
+    .comments,.feedback-container,.feedback-header,.comments-body,.comments-length{
+        width:calc(100% - 48px);
+    }
+    .comment-length{
+        position: absolute;
+        bottom: 33px;
+        right: 24px;
+    }
+    .card-feature{
+        margin-bottom: 72px;
+    }
+}
+@media only screen and(max-width:550px){
+.feedback-card{
+    width: calc(100% - 48px);
+}
+}
+@media only screen and(max-width:700px){
+    .comment-texts{
+        margin-left: 50px;
+    }
 }

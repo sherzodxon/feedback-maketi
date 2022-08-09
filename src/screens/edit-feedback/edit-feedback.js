@@ -57,6 +57,7 @@ const EditFeedback = () => {
   const navigate =useNavigate();
 
    const {posts ,setPosts} =useData();
+   const [buttonOpen ,setButtonOpen]=useState(false)
    const post =posts.productRequests.find(post=> post.id ===+id);
    const [optionOpen ,setOptionOpen] =useState(false);
    const [statusOpen, setStatusOpen]=useState(false);
@@ -87,8 +88,8 @@ const EditFeedback = () => {
     });
     
    }
-   
-   
+  
+  
 
    const deletePosts=()=>{
     const editingPostIndex = posts.productRequests.findIndex(product => product.id === +id);
@@ -103,13 +104,15 @@ const EditFeedback = () => {
 
   const handleAddOptionClick = () => {
     setOptionOpen((optionOpen) => {
-      return !optionOpen
+      return !optionOpen 
     });
 
   }
   const handleStatusClick = () => {
     setStatusOpen((optionOpen) => {
-      return !optionOpen
+      return !optionOpen && setButtonOpen(
+        !buttonOpen)
+     
     });
 
   }
@@ -141,24 +144,23 @@ const handleStatusChange =(evt)=>{
          </label>
          <h4 className="input-title">Category</h4>
          <p className="input-text">Choose a category for your feedback</p>
-         <button onClick={handleAddOptionClick} defaultValue={post.category}  className={optionOpen?"add-input-button" :" add-input-button"}>{InputCategoryOptions.find(option => option.value === optionValue).text}</button>
+         <button onClick={handleAddOptionClick} defaultValue={post.category}  className={optionOpen?"add-input-button--active" :" add-input-button"}>{InputCategoryOptions.find(option => option.value === optionValue).text}</button>
          <Sort
          className="add-option-list"
          open={optionOpen} 
          close={setOptionOpen}
-         width="456px"
+        
          name="add-option"
          defaultValue={optionValue}
          options={InputCategoryOptions}
          onChange={handleAddOptionChange} />
           <h4 className="input-title">Update Status</h4>
           <p className="input-text">Change feedback state</p>
-          <button onClick={handleStatusClick}  className={optionOpen?"add-input-button" :" add-input-button"}>{InputStatusOptions.find(option => option.value === statusValue).text}</button>
+          <button onClick={handleStatusClick}  className={buttonOpen?"add-input-button--active" :"add-input-button"}>{InputStatusOptions.find(option => option.value === statusValue).text}</button>
          <Sort
          className="add-option-list"
-         open={statusOpen} 
+         open={buttonOpen} 
          close={setOptionOpen}
-         width="456px"
          name="add-option"
          defaultValue={statusValue}
          options={InputStatusOptions}
@@ -169,11 +171,10 @@ const handleStatusChange =(evt)=>{
             <textarea type="text" defaultValue={post.description} ref={descriptionRef} className="edit-feedback-input edit-feedback-input-detail"   />
           </label>
           <div className="editing-button-wrapper">
-          <Button className="danger-button" to="/     " onClick={deletePosts} children="Delete"/>
-          <div className="edit-button-wrapper">
-          <Button to={`/feedback/${id}`}  className="dark-button" children="Cancel"/>
-          <Button  to={`/feedback/${id}`} children ="Add Feedback" />
-          </div>
+          <Button className="danger-button" to="/" onClick={deletePosts} children="Delete"/>
+          <Button to={`/feedback/${id}`}  className="dark-button edit-cancel-button" children="Cancel"/>
+          <Button  to={`/feedback/${id}`} className="edit-save-button" children ="Save Feedback" />
+        
           </div>
         </form>
       </div>

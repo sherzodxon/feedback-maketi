@@ -20,7 +20,7 @@
     }
 }
 
-.feedback-title {
+.add-feedback-title {
     padding-top: 52px;
     padding-left: 42px;
     font-weight: 700;
@@ -61,8 +61,7 @@
 }
 
 .add-feedback-input {
-    max-width: 456px;
-    min-width: 456px;
+    width: 91%;
     height: 48px;
     background: #F7F8FD;
     border: none;
@@ -82,7 +81,7 @@
 
 .add-input-button {
     border: none;
-    width: 456px;
+    width: 91%;
     height: 48px;
     background: #F7F8FD;
     border: none;
@@ -96,6 +95,47 @@
     padding-left: 24px;
     text-align: left;
     cursor: pointer;
+    position: relative;
+
+    &::after {
+        width: 10px;
+        height: 5px;
+        content: "";
+        position: absolute;
+        background: url(../../assets/images/input-bottom.svg) no-repeat center center;
+        top: 22px;
+        right: 22px;
+    }
+}
+
+.add-input-button--active {
+    border: none;
+    width: 91%;
+    height: 48px;
+    background: #F7F8FD;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #647196;
+    padding-left: 24px;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+        width: 10px;
+        height: 5px;
+        content: "";
+        position: absolute;
+        background: url(../../assets/images/input-top.svg) no-repeat center center;
+        top: 22px;
+        right: 22px;
+    }
+
 }
 
 .add-feedback-input-detail {
@@ -123,9 +163,14 @@
     margin-right: 40px;
 }
 
+.input-text {
+    width: 91%;
+}
+
 .danger-button {
     background: #D73737;
 }
+
 .add-option-list {
     display: block;
     list-style: none;
@@ -133,11 +178,88 @@
     border-radius: 10px;
     padding: 0;
     position: absolute;
-    z-index: 99;
+    z-index: 26;
     background: #FFFFFF;
+    width: 456px;
 
 }
-.sort__list--opened{
+
+.sort__list--opened {
     display: none;
 }
 
+@media only screen and(max-width:600px) {
+
+    .add-feedback-wrapper,
+    .add-container {
+        width: calc(100% - 48px);
+    }
+
+    .add-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .back-button {
+        margin-left: 24px;
+    }
+
+    .add-feedback-wrapper {
+        margin-top: 30px;
+    }
+
+    .add-form {
+        padding-left: 24px;
+    }
+
+    .add-feedback-input,
+    .add-input-button,
+    .input-text,.add-input-button--active {
+        width: 93%;
+    }
+    .add-option-list{
+        width: 88%;
+    }
+    .add-feedback-title {
+        padding-left: 24px;
+    }
+
+    .add-container {
+        &::after {
+            left: 24px;
+        }
+    }
+
+    .add-button-wrapper {
+        width: 93%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-left: 0;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .add-cancel-button {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .dark-button {
+        margin-right: 0;
+    }
+
+    .add-button {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .add-input-button,
+    .add-input-button--active {
+        padding-left: 16px;
+
+    }
+
+    .add-feedback-input-detail {
+        padding-top: 16px;
+    }
+}

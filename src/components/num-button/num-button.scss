@@ -30,11 +30,6 @@
         left: calc(50% - 5px);
     }
 
-    &:hover {
-        background: #CFD7FF;
-
-    }
-
     &:active {
         background: #4661E6;
         color: #FFFFFF;
@@ -81,9 +76,6 @@
         transform:rotateX(180deg);
 
     }
-    &:hover{
-        background: #3A4374;
-    }
 }
 @media only screen and(max-width:600px){
 .num-btn{
@@ -95,7 +87,7 @@
     padding: 0;
     padding-left: 34px;
     padding-right: 6px;
-    left: 40px;
+    left: 25px;
     bottom: 24px;
     &::before{
         left: 16px;

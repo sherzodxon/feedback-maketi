@@ -5,28 +5,21 @@
   @include reset-btn;
   text-align: center;
   display: block;
-  width: fit-content;
   padding: 12px 24px;
   border-radius: 10px;
   background-color: $primary;
   color: #F2F4FE;
   font-weight: 700;
   font-size: 14px;
-  transition: 0.1s ease all;
-
+  line-height: 19px;
+  
   &:hover {
     background-color: #C75AF6;
   }
 }
 @media only screen and(max-width:900px){
   .button{
-  padding: 8px 18px;
-  font-size: 12px;
+  padding: 10px 16px;
+  font-size: 13px;
   }
-}
-@media only screen and(max-width:360px){
-.button{
-  padding: 5px 14px;
-  font-size: 10px;
-}
 }

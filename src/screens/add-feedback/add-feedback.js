@@ -88,7 +88,7 @@ const handleAddOptionChange = (evt) => {
      <div className="add-feedback-wrapper">
       <BackButton to={"/"} children="Go Back"/>
       <div className="add-container">
-       <h2 className="feedback-title">Create New Feedback</h2>
+       <h2 className="add-feedback-title">Create New Feedback</h2>
        <form className="add-form" id="add-form-id" onSubmit={handleFormClick}>
          <h4 className="input-title">Feedback Title</h4>
          <p className="input-text">Add a short, descriptive headline</p>
@@ -98,12 +98,11 @@ const handleAddOptionChange = (evt) => {
          <h4 className="input-title">Category</h4>
          <p className="input-text">Choose a category for your feedback</p>
          <label className="add-label">
-         <button onClick={handleAddOptionClick} ref={categoryRef} className={optionOpen?"add-input-button" :" add-input-button"}>{InputOptions.find(option => option.value === optionValue).text}</button>
+         <button onClick={handleAddOptionClick} ref={categoryRef} className={optionOpen?"add-input-button--active" :"add-input-button"}>{InputOptions.find(option => option.value === optionValue).text}</button>
          <Sort
          className="add-option-list"
          open={optionOpen} 
          close={setOptionOpen}
-         width="456px"
          name="add-option"
          defaultValue={optionValue}
          options={InputOptions}
@@ -115,8 +114,8 @@ const handleAddOptionChange = (evt) => {
             <textarea type="text" ref={descriptionRef} className="add-feedback-input add-feedback-input-detail"  />
           </label>
           <div className="add-button-wrapper">
-          <Button  to="/"  className="dark-button" children="Cancel"/>
-          <Button children ="Add Feedback" />
+          <Button  to="/"  className="dark-button add-cancel-button" children="Cancel"/>
+          <Button className="add-button" children ="Add Feedback" />
           </div>
         </form>
       </div>

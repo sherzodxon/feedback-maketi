@@ -88,6 +88,9 @@
         right: -9px;
     }
 }
+.header-sort{
+    width: 300px;
+}
 @media only screen and(max-width:1150px){
     .header{
         width: 870px;
@@ -127,7 +130,7 @@
 @media only screen and(max-width:600px){
 .header{
     border-radius: 0px;
-    width:calc(100% + 142px)
+    width:100%;
 }
 main{
     width: 100%;
