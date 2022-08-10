@@ -86,7 +86,7 @@ const handleAddOptionChange = (evt) => {
   return (
      <>
      <div className="add-feedback-wrapper">
-      <BackButton to={"/"} children="Go Back"/>
+      <BackButton className="add-back-button" to={"/"} children="Go Back"/>
       <div className="add-container">
        <h2 className="add-feedback-title">Create New Feedback</h2>
        <form className="add-form" id="add-form-id" onSubmit={handleFormClick}>

@@ -133,7 +133,7 @@ const handleStatusChange =(evt)=>{
   return (
     <>
      <div className="edit-feedback-wrapper">
-      <BackButton to={`/feedback/${id}`} children="Go Back"/>
+      <BackButton className="add-back-button" to={`/feedback/${id}`} children="Go Back"/>
       <div className="edit-container">
        <h2 className="feedback-title">{`Editing '${post.title}'`}</h2>
        <form className="edit-form" onSubmit={handleFormSubmit}>

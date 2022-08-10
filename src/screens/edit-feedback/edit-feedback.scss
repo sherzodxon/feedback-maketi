@@ -129,19 +129,24 @@
     padding-bottom: 40px;
 }
 @media only screen and(max-width:600px){
-    .edit-feedback-wrapper,.edit-container{
+.edit-container{
         width: calc(100% - 48px);
     }
+    .edit-feedback-wrapper{
+        width: 100%;
+    }
+    .feedback-header{
+        margin-left: 0;
+        margin-right: 0;
+    }
     .edit-feedback-input{
-        width: 93%;
+        width: 100%;
     }
     .edit-container{
         margin-left: auto;
         margin-right: auto;
     }
-    .back-button{
-        margin-left: 24px;
-    }
+    
     .edit-feedback-wrapper{
         margin-top: 30px;
     }
@@ -149,7 +154,7 @@
         padding-left: 24px;
     }
     .edit-feedback-input{
-        width: 93%;
+        width: 100%;
         padding-left: 16px;
     }
     .feedback-title{
@@ -162,7 +167,7 @@
         }
     }
     .editing-button-wrapper{
-        width: 93%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         margin-left: 0;
@@ -170,6 +175,9 @@
         flex-direction: column-reverse;
         padding-bottom: 24px;
 
+    }
+    .edit-form{
+        padding-right: 24px;
     }
     .edit-cancel-button{
         width: 100%;

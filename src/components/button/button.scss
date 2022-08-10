@@ -23,3 +23,14 @@
   font-size: 13px;
   }
 }
+@media only screen and(max-width:450px){
+  .button{
+    padding: 8px 14px;
+  }
+}
+@media only screen and(max-width:360px){
+  .button{
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+}

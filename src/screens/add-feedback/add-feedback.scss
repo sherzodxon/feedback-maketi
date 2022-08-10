@@ -190,9 +190,11 @@
 
 @media only screen and(max-width:600px) {
 
-    .add-feedback-wrapper,
     .add-container {
         width: calc(100% - 48px);
+    }
+    .add-feedback-wrapper{
+        width: 100%;
     }
 
     .add-container {
@@ -201,7 +203,7 @@
     }
 
     .back-button {
-        margin-left: 24px;
+        margin-left: 0px;
     }
 
     .add-feedback-wrapper {
@@ -215,7 +217,7 @@
     .add-feedback-input,
     .add-input-button,
     .input-text,.add-input-button--active {
-        width: 93%;
+        width: 100%;
     }
     .add-option-list{
         width: 88%;
@@ -229,9 +231,15 @@
             left: 24px;
         }
     }
+    .add-form{
+        padding-right: 24px;
+    }
+    .add-back-button{
+        margin-left: 24px;
+    }
 
     .add-button-wrapper {
-        width: 93%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         margin-left: 0;
@@ -256,6 +264,7 @@
     .add-input-button,
     .add-input-button--active {
         padding-left: 16px;
+        width: 100%;
 
     }
 
@@ -264,9 +273,7 @@
     }
 }
 @media only screen and(max-width:420px){
-    .add-input-button,.add-input-button--active,.add-feedback-input{
-        width: 91%;
-    }
+    
     .add-option-list{
         width: 84%;
     }

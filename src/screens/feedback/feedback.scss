@@ -61,12 +61,15 @@
 }
 @media only screen and(max-width:600px){
     .feedback-card{
-        width:calc(100% - 48px);
+        width:100%;
         flex-direction: column-reverse;
         position: relative;
     }
-    .comments,.feedback-container,.feedback-header,.comments-body,.comments-length{
+    .comments,.feedback-container,.comments-body,.comments-length{
         width:calc(100% - 48px);
+    }
+    .feedback-header,.comments-body{
+        width: 100%;
     }
     .comment-length{
         position: absolute;
@@ -79,7 +82,7 @@
 }
 @media only screen and(max-width:550px){
 .feedback-card{
-    width: calc(100% - 48px);
+    width: 100%;
 }
 }
 @media only screen and(max-width:700px){
