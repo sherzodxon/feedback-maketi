@@ -88,7 +88,7 @@
     background: #000000;
     mix-blend-mode: normal;
     opacity: 0.5;
-    top: 128px;
+    top: 72px;
     width: 100%;
     height: 100vh;
     z-index: 20;
@@ -202,7 +202,7 @@
         width: 271px;
         height: 100vh;
         right: 0px;
-        animation:hamburgerLeft  ease 1000ms;
+        animation:hamburgerLeft  ease 800ms;
     }
     .card-hidden{
         overflow: hidden;
