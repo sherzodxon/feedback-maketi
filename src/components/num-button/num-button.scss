@@ -25,7 +25,7 @@
         height: 8px;
         content: '';
         position: absolute;
-        background: url(../../assets/images/btn-top-blue.svg) no-repeat;
+        background: url(../../assets/images/btn-top-small.svg) no-repeat;
         top: 14px;
         left: calc(50% - 5px);
     }
@@ -37,7 +37,7 @@
 
         &::before {
             
-            background: url(../../assets/images/btn-white-bottom.svg) no-repeat center center;
+            background: url(../../assets/images/btn-top-small.svg) no-repeat center center;
         }
 
     }

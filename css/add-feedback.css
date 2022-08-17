@@ -1,3 +1,51 @@
+@-webkit-keyframes bodyLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes bodyLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@-webkit-keyframes bodyRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes bodyRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@-webkit-keyframes bodyTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes bodyTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
 .add-container {
   width: 540px;
   background: #FFFFFF;
@@ -6,11 +54,10 @@
   margin-bottom: 187px;
   position: relative;
 }
-
 .add-container::after {
   width: 56px;
   height: 56px;
-  content: '';
+  content: "";
   position: absolute;
   background: url(../../assets/images/add-feedback.png) no-repeat center center;
   border-radius: 50%;
@@ -18,7 +65,7 @@
   left: 42px;
 }
 
-.feedback-title {
+.add-feedback-title {
   padding-top: 52px;
   padding-left: 42px;
   font-weight: 700;
@@ -59,13 +106,12 @@
 }
 
 .add-feedback-input {
-  max-width: 456px;
-  min-width: 456px;
+  width: 91%;
   height: 48px;
   background: #F7F8FD;
   border: none;
   border-radius: 5px;
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -73,19 +119,18 @@
   color: #647196;
   padding: 24px;
 }
-
 .add-feedback-input:focus {
   border: none;
 }
 
 .add-input-button {
   border: none;
-  width: 456px;
+  width: 91%;
   height: 48px;
   background: #F7F8FD;
   border: none;
   border-radius: 5px;
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -94,6 +139,44 @@
   padding-left: 24px;
   text-align: left;
   cursor: pointer;
+  position: relative;
+}
+.add-input-button::after {
+  width: 10px;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background: url(../../assets/images/input-bottom.svg) no-repeat center center;
+  top: 22px;
+  right: 22px;
+}
+
+.add-input-button--active {
+  border: none;
+  width: 91%;
+  height: 48px;
+  background: #F7F8FD;
+  border: none;
+  border-radius: 5px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #647196;
+  padding-left: 24px;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+}
+.add-input-button--active::after {
+  width: 10px;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background: url(../../assets/images/input-top.svg) no-repeat center center;
+  top: 22px;
+  right: 22px;
 }
 
 .add-feedback-input-detail {
@@ -102,26 +185,25 @@
 }
 
 .dark-button {
-  background: #3a4374;
+  background: rgb(58, 67, 116);
   margin-right: 16px;
 }
-
 .dark-button:hover {
   background: #647196;
 }
 
 .add-button-wrapper {
   width: 253px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 0;
   padding-bottom: 40px;
   margin-left: auto;
   margin-right: 40px;
+}
+
+.input-text {
+  width: 91%;
 }
 
 .danger-button {
@@ -131,16 +213,93 @@
 .add-option-list {
   display: block;
   list-style: none;
-  -webkit-box-shadow: 0px 10px 40px -7px rgba(55, 63, 104, 0.350492);
-          box-shadow: 0px 10px 40px -7px rgba(55, 63, 104, 0.350492);
+  box-shadow: 0px 10px 40px -7px rgba(55, 63, 104, 0.350492);
   border-radius: 10px;
   padding: 0;
   position: absolute;
-  z-index: 99;
+  z-index: 26;
   background: #FFFFFF;
+  width: 456px;
 }
 
 .sort__list--opened {
   display: none;
 }
-/*# sourceMappingURL=add-feedback.css.map */
+
+@media only screen and (max-width: 600px) {
+  .add-container {
+    width: calc(100% - 48px);
+  }
+  .add-feedback-wrapper {
+    width: 100%;
+  }
+  .add-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .back-button {
+    margin-left: 0px;
+  }
+  .add-feedback-wrapper {
+    margin-top: 30px;
+  }
+  .add-form {
+    padding-left: 24px;
+  }
+  .add-feedback-input,
+.add-input-button,
+.input-text, .add-input-button--active {
+    width: 100%;
+  }
+  .add-option-list {
+    width: 88%;
+  }
+  .add-feedback-title {
+    padding-left: 24px;
+  }
+  .add-container::after {
+    left: 24px;
+  }
+  .add-form {
+    padding-right: 24px;
+  }
+  .add-back-button {
+    margin-left: 24px;
+  }
+  .add-button-wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 0;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .add-cancel-button {
+    width: 100%;
+    margin-right: 0;
+  }
+  .dark-button {
+    margin-right: 0;
+  }
+  .add-button {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .add-input-button,
+.add-input-button--active {
+    padding-left: 16px;
+    width: 100%;
+  }
+  .add-feedback-input-detail {
+    padding-top: 16px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .add-option-list {
+    width: 84%;
+  }
+  .add-feedback-title {
+    padding-right: 23px;
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=add-feedback.css.map */

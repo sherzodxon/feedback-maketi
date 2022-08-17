@@ -1,3 +1,51 @@
+@-webkit-keyframes bodyLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes bodyLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@-webkit-keyframes bodyRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes bodyRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@-webkit-keyframes bodyTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes bodyTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
 .num-btn {
   margin: 0;
   padding: 0;
@@ -24,28 +72,21 @@
   min-width: 40px;
   max-width: 40px;
 }
-
 .num-btn::before {
   width: 10px;
   height: 8px;
-  content: '';
+  content: "";
   position: absolute;
-  background: url(../../assets/images/btn-top-blue.svg) no-repeat;
+  background: url(../../assets/images/btn-top-small.svg) no-repeat;
   top: 14px;
   left: calc(50% - 5px);
 }
-
-.num-btn:hover {
-  background: #CFD7FF;
-}
-
 .num-btn:active {
   background: #4661E6;
   color: #FFFFFF;
 }
-
 .num-btn:active::before {
-  background: url(../../assets/images/btn-white-bottom.svg) no-repeat center center;
+  background: url(../../assets/images/btn-top-small.svg) no-repeat center center;
 }
 
 .num-btn-active {
@@ -76,21 +117,15 @@
   max-width: 40px;
   min-width: 40px;
 }
-
 .num-btn-active::before {
   width: 10px;
   height: 8px;
-  content: '';
+  content: "";
   position: absolute;
   top: 14px;
   left: calc(50% - 5px);
   background: url(../../assets/images/btn-white-bottom.svg) no-repeat center center;
-  -webkit-transform: rotateX(180deg);
-          transform: rotateX(180deg);
-}
-
-.num-btn-active:hover {
-  background: #3A4374;
+  transform: rotateX(180deg);
 }
 
 @media only screen and (max-width: 600px) {
@@ -103,12 +138,11 @@
     padding: 0;
     padding-left: 34px;
     padding-right: 6px;
-    left: 40px;
+    left: 25px;
     bottom: 24px;
   }
   .num-btn::before {
     left: 16px;
     top: 13px;
   }
-}
-/*# sourceMappingURL=num-button.css.map */
+}/*# sourceMappingURL=num-button.css.map */

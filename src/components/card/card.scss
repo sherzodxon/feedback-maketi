@@ -1,3 +1,5 @@
+@import "../../sass/mixins.scss";
+
 .card-body {
     width: 825px;
     background: #FFFFFF;
@@ -70,7 +72,31 @@
     margin-right: auto;
     padding-top: 28px;
 }
-
+.card-wrapper{
+    margin-bottom: 100px;
+}
+.first-body:nth-child(5),.first-body:nth-child(6),.first-body:nth-child(7),.first-body:nth-child(8),.first-body:nth-child(9),.first-body:nth-child(10),.first-body:nth-child(11),.first-body:nth-child(12),.first-body:nth-child(13),.first-body:nth-child(14),.first-body:nth-child(15),.first-body:nth-child(16),.first-body:nth-child(17),.first-body:nth-child(18),.first-body:nth-child(19),.first-body:nth-child(20){
+display: none;
+}
+.second-body:nth-child(1),.second-body:nth-child(2),.second-body:nth-child(3),.second-body:nth-child(4),.second-body:nth-child(9),.second-body:nth-child(10),.second-body:nth-child(11),.second-body:nth-child(12),.second-body:nth-child(13),.second-body:nth-child(14),.second-body:nth-child(15),.second-body:nth-child(16),.second-body:nth-child(17),.second-body:nth-child(18),.second-body:nth-child(19),.second-body:nth-child(20){
+display: none;
+}
+.three-body:nth-child(1),.three-body:nth-child(2),.three-body:nth-child(3),.three-body:nth-child(4),.three-body:nth-child(5),.three-body:nth-child(6),.three-body:nth-child(7),.three-body:nth-child(8),.three-body:nth-child(13),.three-body:nth-child(14),.three-body:nth-child(15),.three-body:nth-child(16),.three-body:nth-child(17),.three-body:nth-child(18),.three-body:nth-child(19),.three-body:nth-child(20){
+    display:none;
+}
+.four-body:nth-child(1),.four-body:nth-child(2),.four-body:nth-child(3),.four-body:nth-child(4),.four-body:nth-child(5),.four-body:nth-child(6),.four-body:nth-child(7),.four-body:nth-child(8),.four-body:nth-child(9),.four-body:nth-child(10),.four-body:nth-child(11),.four-body:nth-child(12){
+    display: none;
+}
+.left-body{ 
+    animation: bodyLeft ease 700ms;
+    
+}
+.right-body{
+    animation: bodyRight ease 700ms;
+}
+.top-body{
+    animation: bodyTop ease 700ms;
+}
 @media only screen and(max-width:1150px){
     .card-body{
         width: 870px;
@@ -93,6 +119,8 @@
         margin-left: 25px;
         padding-top: 24px;
     }
+    
+    
 }
 @media only screen and(max-width:600px){
     .card-body{
@@ -116,4 +144,9 @@
 .card-body{
     width: calc(100% - 48px);
 }
+}
+@media only screen and(max-width:550px){
+    .card-text-body{
+        padding-right: 24px;
+    }
 }

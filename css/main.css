@@ -1,48 +1,39 @@
 /* jost-regular - latin */
 @font-face {
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-display: swap;
   font-weight: 400;
-  src: url("../assets/fonts/jost-v13-latin-regular.woff2") format("woff2"), url("../assets/fonts/jost-v13-latin-regular.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("../assets/fonts/jost-v13-latin-regular.woff2") format("woff2"), url("../assets/fonts/jost-v13-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
 /* jost-500 - latin */
 @font-face {
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-display: swap;
   font-weight: 500;
-  src: url("../assets/fonts/jost-v13-latin-500.woff2") format("woff2"), url("../assets/fonts/jost-v13-latin-500.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("../assets/fonts/jost-v13-latin-500.woff2") format("woff2"), url("../assets/fonts/jost-v13-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
 /* jost-600 - latin */
 @font-face {
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-display: swap;
   font-weight: 600;
-  src: url("../assets/fonts/jost-v13-latin-600.woff2") format("woff2"), url("../assets/fonts/jost-v13-latin-600.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("../assets/fonts/jost-v13-latin-600.woff2") format("woff2"), url("../assets/fonts/jost-v13-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
 /* jost-700 - latin */
 @font-face {
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-display: swap;
   font-weight: 700;
-  src: url("../assets/fonts/jost-v13-latin-700.woff2") format("woff2"), url("../assets/fonts/jost-v13-latin-700.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("../assets/fonts/jost-v13-latin-700.woff2") format("woff2"), url("../assets/fonts/jost-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
 *,
 *::after,
 *::before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -54,6 +45,12 @@ body {
   line-height: 1.5;
   background-color: #F2F2F2;
   color: #647196;
+  overflow-x: hidden;
+}
+
+main {
+  overflow-x: hidden;
+  position: relative;
 }
 
 a {
@@ -75,12 +72,8 @@ a {
   margin: 0 auto;
   padding: 0 115px;
   padding-top: 90px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
 }
 
 @media only screen and (max-width: 1250px) {
@@ -88,45 +81,47 @@ a {
     padding: 0 50px;
     padding-top: 30px;
   }
+  body {
+    overflow-x: hidden;
+  }
 }
-
 @media only screen and (max-width: 1200px) {
   .container {
     padding: 0 30px;
     padding-top: 30px;
   }
 }
-
 @media only screen and (max-width: 1150px) {
   .container {
     width: 900px;
     padding: 15px;
     padding-top: 30px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 @media only screen and (max-width: 900px) {
   .container {
     width: 700px;
   }
 }
-
 @media only screen and (max-width: 700px) {
   .container {
     width: 600px;
   }
 }
-
 @media only screen and (max-width: 600px) {
   .container {
-    width: 490px;
+    width: 600px;
     padding-top: 0;
-    position: absolute;
-    padding: 5px;
+    position: relative;
+    padding: 0;
+  }
+  body, main {
+    overflow-x: hidden;
   }
 }
-/*# sourceMappingURL=main.css.map */
+@media only screen and (max-width: 550px) {
+  .container {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */

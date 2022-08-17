@@ -1,12 +1,29 @@
+@-webkit-keyframes hamburgerLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  90% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes hamburgerLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  90% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .control-wrapper {
   width: 255px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-right: 30px;
 }
 
@@ -32,6 +49,7 @@
 }
 
 .frontend-button {
+  display: none;
   background-color: transparent;
   border: none;
   position: absolute;
@@ -71,6 +89,8 @@
   padding-bottom: 10px;
   margin-bottom: 24px;
   height: 216px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .black-wrapper--active {
@@ -78,47 +98,37 @@
   background: #000000;
   mix-blend-mode: normal;
   opacity: 0.5;
-  top: 128px;
-  width: 470px;
+  top: 72px;
+  width: 100%;
   height: 100vh;
   z-index: 20;
 }
 
 .hamburger-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
+}
+
+.onclick-all, .onclick-ui, .onclick-ux, .onclick-en, .onclick-bug, .onclick-feat {
+  display: block;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
 }
 
 @media only screen and (max-width: 1150px) {
   .control-wrapper {
     width: 100%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 40px;
     margin-right: 0;
   }
   .hamburger-wrapper {
     width: calc(100% - 310px);
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    justify-content: space-between;
+    flex-direction: row;
     margin-left: auto;
   }
   .feature-wrapper {
@@ -128,7 +138,6 @@
     margin-bottom: 0;
   }
 }
-
 @media only screen and (max-width: 900px) {
   .frontend-wrapper {
     width: 215px;
@@ -153,17 +162,14 @@
     padding-left: 18px;
   }
 }
-
 @media only screen and (max-width: 700px) {
   .feature-wrapper,
-  .frontend-wrapper {
+.frontend-wrapper {
     width: 175px;
   }
   .hamburger-wrapper {
     width: calc(100% - 198px);
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .frontend-title {
     font-size: 16px;
@@ -172,26 +178,25 @@
     font-size: 14px;
   }
 }
-
 @media only screen and (max-width: 600px) {
   .hamburger-wrapper {
     display: none;
   }
+  .frontend-button {
+    display: block;
+  }
   .hamburger-wrapper--active {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     position: absolute;
     top: 72px;
     background: #F7F8FD;
     z-index: 99;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 271px;
     height: 100vh;
-    right: 15px;
+    right: 0px;
+    -webkit-animation: hamburgerLeft ease 800ms;
+            animation: hamburgerLeft ease 800ms;
   }
   .card-hidden {
     overflow: hidden;
@@ -204,7 +209,7 @@
     margin-bottom: 24px;
   }
   .frontend-wrapper {
-    width: 470px;
+    width: 100%;
     margin-bottom: 0;
     border-radius: 0px;
     height: 72px;
@@ -212,7 +217,7 @@
   .frontend-title {
     margin-top: 16px;
     padding-top: 0;
-    font-family: 'Jost';
+    font-family: "Jost";
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
@@ -227,5 +232,4 @@
   .control-wrapper {
     margin-bottom: 0;
   }
-}
-/*# sourceMappingURL=control.css.map */
+}/*# sourceMappingURL=control.css.map */

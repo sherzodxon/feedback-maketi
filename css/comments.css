@@ -15,34 +15,50 @@
 }
 
 .comments-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .user-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
-.user-img {
+.user-image {
+  display: block;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  position: relative;
+  z-index: 99;
+}
+.user-image::after {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url(../../assets/images/user-image.png) no-repeat center center;
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: #3A4374;
+  z-index: 99;
 }
 
 .user-status {
   margin-left: 32px;
+  position: relative;
+}
+.user-status::after {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url(../../assets/images/user-image-svg.svg) no-repeat center center;
+  content: "";
+  top: 5px;
+  left: -60px;
+  border-radius: 50%;
+  z-index: 99;
 }
 
 .user-name {
@@ -55,13 +71,13 @@
 }
 
 .comment-texts {
-  margin-left: 72px;
+  margin-left: 52px;
 }
 
 .comment-button {
   border: none;
   background-color: transparent;
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -69,4 +85,12 @@
   color: #4661E6;
   cursor: pointer;
 }
-/*# sourceMappingURL=comments.css.map */
+
+@media only screen and (max-width: 600px) {
+  .user-name {
+    font-size: 15px;
+  }
+  .comments-legth {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=comments.css.map */

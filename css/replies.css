@@ -6,31 +6,14 @@
 }
 
 .comments-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .user-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.user-img {
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  background-color: black;
+  align-items: center;
 }
 
 .user-status {
@@ -53,7 +36,7 @@
 .comment-button {
   border: none;
   background-color: transparent;
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -67,5 +50,4 @@
   font-size: 15px;
   line-height: 22px;
   color: #AD1FEA;
-}
-/*# sourceMappingURL=replies.css.map */
+}/*# sourceMappingURL=replies.css.map */

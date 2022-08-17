@@ -1,0 +1,72 @@
+#app {
+  width: 180px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.pagination-bottom-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 290px;
+  display: flex;
+  align-items: center;
+  left: 50%;
+  padding-bottom: 50px;
+}
+
+.pag-button {
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: #C75AF6;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease width;
+}
+
+.pag-button--active {
+  width: 20px;
+  height: 20px;
+  float: left;
+  border-radius: 20px;
+  transition: 0.3s ease width;
+  width: 60px;
+  height: 20px;
+  cursor: auto;
+  background-color: #C75AF6;
+}
+
+.pag-button:last-child {
+  margin-right: 0px;
+}
+
+.previous-button {
+  width: 25px;
+  height: 15px;
+  border: none;
+  background: url(../../assets/images/btn-top-blue.svg) no-repeat center center;
+  transform: rotate(-90deg);
+  cursor: pointer;
+}
+
+.next-button {
+  width: 25px;
+  height: 15px;
+  border: none;
+  background: url(../../assets/images/btn-top-blue.svg) no-repeat center center;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1150px) {
+  .pagination-bottom-wrapper {
+    left: calc(50% - 145px);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .pagination-bottom-wrapper {
+    bottom: 0;
+  }
+}/*# sourceMappingURL=pagination.css.map */

@@ -1,12 +1,8 @@
 import FeatureRadio from "../feature-radio/feature-radio"
 import Roadmap from "../roadmap/roadmap"
-import {
-    useState
-} from "react"
-import "./control.scss"
-import {
-    click
-} from "@testing-library/user-event/dist/click"
+import { useState} from "react"
+import "./control.scss" 
+
 import {
     useData
 } from "../../contexts/data"
