@@ -13,7 +13,8 @@ const Main = () => {
   let [button3 ,setButton3]=useState(false);
   let [button4 ,setButton4]=useState(false);
 
-  const Click1=()=>{
+ if(posts.productRequests.length>12){
+  var Click1=()=>{
     setBodyClass(
       bodyClass="first-body top-body"
     )
@@ -30,7 +31,7 @@ const Main = () => {
     button4=false
   )
   }
-  const Click2=()=>{
+  var Click2=()=>{
     setBodyClass(
       bodyClass="second-body top-body"
     )
@@ -48,7 +49,7 @@ const Main = () => {
         button4=false
       )
   }   
-  const Click3=()=>{
+  var Click3=()=>{
         setBodyClass(
           bodyClass="three-body top-body"
         )
@@ -66,7 +67,7 @@ const Main = () => {
           )
           
   }   
-  const Click4=()=>{
+  var Click4=()=>{
     setBodyClass(
       bodyClass="four-body top-body"
     )
@@ -85,7 +86,7 @@ const Main = () => {
       
 }   
   
-  const previousButton=()=>{
+  var previousButton=()=>{
     if(button1){
        setButton1(
         button1=false
@@ -132,7 +133,7 @@ const Main = () => {
     }
     
   }    
-  const nextButton=()=>{
+  var nextButton=()=>{
     if(button1){
       setButton1(
        button1=false
@@ -180,6 +181,131 @@ const Main = () => {
    
   }
  
+ }
+ else if(posts.productRequests.length <= 12){
+  Click1=()=>{
+    setBodyClass(
+      bodyClass="first-body top-body"
+    )
+  setButton1(
+      button1=true
+  )
+  setButton2(
+      button2=false
+  )
+  setButton3(
+      button3=false
+  )
+  }
+  Click2=()=>{
+    setBodyClass(
+      bodyClass="second-body top-body"
+    )
+      setButton1(
+          button1=false
+      )
+      setButton2(
+          button2=true
+      )
+      setButton3(
+          button3=false
+      )
+  }   
+  Click3=()=>{
+        setBodyClass(
+          bodyClass="three-body top-body"
+        )
+          setButton1(
+              button1=false
+          )
+          setButton2(
+              button2=false
+          )
+          setButton3(
+              button3=true
+          )
+  }
+
+  previousButton=()=>{
+    if(button1){
+       setButton1(
+        button1=false
+       )
+       setButton3(
+        button3=true
+       )
+       setBodyClass(
+        bodyClass="three-body left-body"
+       )
+    }
+    else if(button3){
+      setButton3(
+        button3=false
+       )
+      setButton2(
+        button2 = true
+      )
+      setBodyClass(
+        bodyClass="second-body left-body"
+       )
+    }
+    else if(button2){
+      setButton2(
+        button2=false
+       )
+      setButton1(
+        button1 = true
+      )
+      setBodyClass(
+        bodyClass="first-body left-body"
+       )
+    }
+    
+  }    
+  nextButton=()=>{
+    if(button1){
+      setButton1(
+       button1=false
+      )
+      setButton2(
+       button2=true
+      )
+      setBodyClass(
+       bodyClass="second-body right-body"
+      )
+   }
+   else if(button2){
+     setButton2(
+       button2=false
+      )
+     setButton3(
+       button3 = true
+     )
+     setBodyClass(
+       bodyClass="three-body right-body"
+      )
+   }
+   else if(button3){
+     setButton3(
+       button3=false
+      )
+     setButton1(
+       button1 = true
+     )
+     setBodyClass(
+       bodyClass="first-body right-body"
+      )
+   }
+   
+  }
+ }
+ var pagClass ="";
+ if(posts.productRequests.length>12){
+  pagClass="pag-button"
+ }
+ else{
+  pagClass="pag-four"
+ }
   return (
   
     <div className="container">
@@ -196,7 +322,7 @@ const Main = () => {
          <div onClick={Click1} className={button1?"pag-button--active":"pag-button"}></div>
          <div onClick={Click2} className={button2?"pag-button--active":"pag-button"}></div>
          <div onClick={Click3} className={button3?"pag-button--active":"pag-button"}></div>
-         <div onClick={Click4} className={button4?"pag-button--active":"pag-button"}></div>
+         <div onClick={Click4} className={button4?"pag-button--active":pagClass}></div>
         </div>
         <button className="next-button" onClick={nextButton}></button>
       </div>

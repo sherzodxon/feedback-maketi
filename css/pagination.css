@@ -2,6 +2,9 @@
   width: 180px;
   margin: 0 auto;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .pagination-bottom-wrapper {
@@ -10,8 +13,12 @@
   width: 290px;
   display: flex;
   align-items: center;
-  left: 50%;
+  left: 30%;
   padding-bottom: 50px;
+}
+
+.pag-four {
+  display: none;
 }
 
 .pag-button {
