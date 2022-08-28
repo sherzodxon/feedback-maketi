@@ -31,7 +31,7 @@ const CommentString =()=>{
   return (
     <div className="feedback-container">
       <header className="feedback-header">
-      <BackButton to={"/"}  children="Go Back"/>
+      <BackButton to={"/head"}  children="Go Back"/>
       <Link className="button" to={`/edit-feedback/${id}`} children="Edit Feedback" />
       </header>
       <Card className="feedback-card" title={post.title} text={post.description} like={post.upvotes} feature

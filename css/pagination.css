@@ -31,6 +31,9 @@
   border-radius: 20px;
   cursor: pointer;
   transition: 0.3s ease width;
+  color: white;
+  text-align: center;
+  font-size: 14px;
 }
 
 .pag-button--active {
@@ -43,6 +46,8 @@
   height: 20px;
   cursor: auto;
   background-color: #C75AF6;
+  color: white;
+  text-align: center;
 }
 
 .pag-button:last-child {
@@ -58,6 +63,15 @@
   cursor: pointer;
 }
 
+.previous-button-disabled {
+  width: 25px;
+  height: 15px;
+  border: none;
+  background: url(../../assets/images/btn-top-blue.svg) no-repeat center center;
+  transform: rotate(-90deg);
+  opacity: 0.5;
+}
+
 .next-button {
   width: 25px;
   height: 15px;
@@ -65,6 +79,18 @@
   background: url(../../assets/images/btn-top-blue.svg) no-repeat center center;
   transform: rotate(90deg);
   cursor: pointer;
+}
+
+.next-button-disabled {
+  width: 25px;
+  height: 15px;
+  background: url(../../assets/images/btn-top-blue.svg) no-repeat center center;
+  transform: rotate(90deg);
+  opacity: 0.5;
+}
+
+.disabled-active {
+  display: none;
 }
 
 @media only screen and (max-width: 1150px) {

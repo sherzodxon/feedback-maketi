@@ -116,6 +116,18 @@
   width: min-content;
 }
 
+.control-out-form {
+  margin-top: 30px;
+}
+
+.control-out-button {
+  width: 100%;
+  background: rgb(58, 67, 116);
+}
+.control-out-button:hover {
+  background: rgb(100, 113, 150);
+}
+
 @media only screen and (max-width: 1150px) {
   .control-wrapper {
     width: 100%;
@@ -124,6 +136,15 @@
     align-items: center;
     margin-bottom: 40px;
     margin-right: 0;
+  }
+  .control-out-form {
+    position: absolute;
+    z-index: 40;
+    top: calc(100vh + 120px);
+    left: calc(50% - 60px);
+  }
+  .control-out-button {
+    width: 120px;
   }
   .hamburger-wrapper {
     width: calc(100% - 310px);
@@ -136,6 +157,7 @@
   }
   .frontend-wrapper {
     margin-bottom: 0;
+    position: relative;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -176,6 +198,9 @@
   }
   .frontend-text {
     font-size: 14px;
+  }
+  .control-out-form {
+    top: calc(100vh + 180px);
   }
 }
 @media only screen and (max-width: 600px) {
@@ -231,5 +256,47 @@
   }
   .control-wrapper {
     margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .control-out-form {
+    position: static;
+    margin-top: 18px;
+  }
+  .control-out-button {
+    margin-left: 24px;
+    width: 223px;
+    position: static;
+    margin-top: 0;
+    margin-top: 0;
+    background: rgb(58, 67, 116);
+  }
+  .control-out-button:hover {
+    background: rgb(100, 113, 150);
+  }
+}
+@media only screen and (max-height: 610px) {
+  .feature-wrapper, .roadmap-wrapper {
+    height: 200px;
+  }
+  .roadmap-wrapper {
+    padding-top: 0;
+  }
+}
+@media only screen and (max-height: 570px) {
+  .feature-wrapper, .roadmap-wrapper {
+    height: 180px;
+  }
+  .roadmap-wrapper {
+    padding-top: 0;
+  }
+  .roadmap-head {
+    height: 30px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .feature-wrapper {
+    margin-top: 12px;
+    margin-bottom: 12px;
   }
 }/*# sourceMappingURL=control.css.map */

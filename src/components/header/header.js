@@ -67,7 +67,7 @@ return(
             <p className="button-wrapper-text">Sort by :</p>
             <button onClick={handleSortClick} className={`${sortOpen? "sort-button-close":"sort-button-active"}`}>{sortOptions.find(option => option.value === sortValue).text}</button>
         </div>
-        <Button to="./add-feedback" children="+ Add Feedback" className="header-button"/>
+        <Button to="/add-feedback" children="+ Add Feedback" className="header-button"/>
        < Sort  
        className="sort__list header-sort"
        open={sortOpen} 

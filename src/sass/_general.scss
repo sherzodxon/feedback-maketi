@@ -34,13 +34,25 @@ a {
   white-space: nowrap;
   width: 1px;
 }
-
+.site-block{
+  display: none;
+}
 .container {
   margin: 0 auto;
   padding: 0 115px;
   padding-top: 90px;
   display: flex;
   align-items: flex-start;
+}
+input{
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  outline: 0;
+
+  &[type="submit"]{
+    cursor: pointer;
+  }
 }
 
 @media only screen and(max-width:1250px) {

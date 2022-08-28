@@ -1,19 +1,19 @@
 import FeatureRadio from "../feature-radio/feature-radio"
 import Roadmap from "../roadmap/roadmap"
-import { useState} from "react"
+import { useEffect, useState} from "react"
 import "./control.scss" 
 
 import {
     useData
 } from "../../contexts/data"
+import { useNavigate } from "react-router-dom"
 
 
-const Control = () => {
+const Control = ({loader,setLoader}) => {
+const navigate =useNavigate();
+
     const [bool, setBool] = useState(true)
-    const {
-        posts,
-        setPosts
-    } = useData();
+    const {posts,setPosts} = useData();
 
     const buttonClick = () => {
         return setBool(!bool)
@@ -95,8 +95,19 @@ const Control = () => {
             ]
         })
     }
-
-
+    const logOutButton=()=>{
+        const currentUser ={
+            image: "./assets/user-images/image-zena.jpg",
+            name: "Zena Kelley",
+            username: "velvetround"
+        }
+            setPosts({
+              ...posts,
+              currentUser,
+            })
+           
+          navigate('/')
+    }
     return(
         <div className="control-wrapper">
             <div className="frontend-wrapper">
@@ -127,8 +138,11 @@ const Control = () => {
 
             </div>   
             <Roadmap />
+            <form className="control-out-form" ><button onClick={logOutButton} className="button control-out-button">Log Out</button></form>
             </div>
             <div onClick={buttonClick} className={bool?"black-wrapper":"black-wrapper--active"}></div>  
+            
+            
         </div>
 
     )

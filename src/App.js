@@ -8,6 +8,7 @@ import NotFound from "./screens/not-found/not-found";
 import DataProvider from "./contexts/data";
 
 import "./sass/main.scss";
+import Head from "./screens/head/head";
 function App() {
 
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path={`/edit-feedback/:id`} element={<EditFeedback />} />
       <Route path="/kanban" element={<Kanban />} />
       <Route path="*" element={<NotFound />} />
+      <Route path="/head" element={<Head />} />
     </Routes>
     </DataProvider>
   )

@@ -31,18 +31,6 @@
   height: 30px;
   border-radius: 50%;
   position: relative;
-  z-index: 99;
-}
-.user-image::after {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background: url(../../assets/images/user-image.png) no-repeat center center;
-  content: "";
-  top: 0;
-  left: 0;
-  background-color: #3A4374;
-  z-index: 99;
 }
 
 .user-status {
@@ -89,8 +77,12 @@
 @media only screen and (max-width: 600px) {
   .user-name {
     font-size: 15px;
+    width: 100%;
   }
   .comments-legth {
     font-size: 16px;
+  }
+  .user-email-name {
+    width: 100%;
   }
 }/*# sourceMappingURL=comments.css.map */

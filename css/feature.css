@@ -46,6 +46,124 @@
     transform: translateY(0%);
   }
 }
+@-webkit-keyframes bounceLeft {
+  0% {
+    transform: translate3d(100%, -50%, 0);
+  }
+  50% {
+    transform: translate3d(-30px, -50%, 0);
+  }
+  100% {
+    transform: translate3d(0, -50%, 0);
+  }
+}
+@keyframes bounceLeft {
+  0% {
+    transform: translate3d(100%, -50%, 0);
+  }
+  50% {
+    transform: translate3d(-30px, -50%, 0);
+  }
+  100% {
+    transform: translate3d(0, -50%, 0);
+  }
+}
+@-webkit-keyframes bounceRight {
+  0% {
+    transform: translate3d(0, -50%, 0);
+  }
+  50% {
+    transform: translate3d(calc(100% + 30px), -50%, 0);
+  }
+  100% {
+    transform: translate3d(100%, -50%, 0);
+  }
+}
+@keyframes bounceRight {
+  0% {
+    transform: translate3d(0, -50%, 0);
+  }
+  50% {
+    transform: translate3d(calc(100% + 30px), -50%, 0);
+  }
+  100% {
+    transform: translate3d(100%, -50%, 0);
+  }
+}
+@-webkit-keyframes showSignUp {
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes showSignUp {
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes showLogin {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate3d(-120px, 0, 0);
+  }
+}
+@keyframes showLogin {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate3d(-120px, 0, 0);
+  }
+}
+@media only screen and (max-width: 800px) {
+  @-webkit-keyframes bounceLeft {
+    0% {
+      transform: translate3d(0, 100%, 0);
+    }
+    50% {
+      transform: translate3d(0, -80%, 0);
+    }
+    100% {
+      transform: translate3d(0, -80%, 0);
+    }
+  }
+  @keyframes bounceLeft {
+    0% {
+      transform: translate3d(0, 100%, 0);
+    }
+    50% {
+      transform: translate3d(0, -80%, 0);
+    }
+    100% {
+      transform: translate3d(0, -80%, 0);
+    }
+  }
+  @-webkit-keyframes bounceRight {
+    0% {
+      transform: translate3d(0, -50%, 0);
+    }
+    50% {
+      transform: translate3d(0, -10%, 0);
+    }
+    100% {
+      transform: translate3d(0, -10%, 0);
+    }
+  }
+  @keyframes bounceRight {
+    0% {
+      transform: translate3d(0, -50%, 0);
+    }
+    50% {
+      transform: translate3d(0, -10%, 0);
+    }
+    100% {
+      transform: translate3d(0, -10%, 0);
+    }
+  }
+}
 .feature {
   color: #4661E6;
   font-family: "Jost";
