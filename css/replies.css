@@ -32,6 +32,9 @@
 
 .comment-texts {
   margin-left: 72px;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  overflow: hidden;
 }
 
 .comment-button {
