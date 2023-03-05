@@ -31,14 +31,14 @@ const CommentString =()=>{
   return (
     <div className="feedback-container">
       <header className="feedback-header">
-      <BackButton to={"/head"}  children="Go Back"/>
+      <BackButton to={"/"}  children="Go Back"/>
       <Link className="button" to={`/edit-feedback/${id}`} children="Edit Feedback" />
       </header>
       <Card className="feedback-card" title={post.title} text={post.description} like={post.upvotes} feature
       ={post.category} key={post.id} comment={post.comments} id={post.id} />
       <div className="comments-body">
         <p className="comments-length">{commentLength+` ${CommentString()}`}</p>
-       {post.comments? post.comments.map((comment)=> <Comments  className="comments-row" key={comment.id} text={comment.content} name={comment.user.name} userName={comment.user.username} />):""}
+       {post.comments? post.comments.map((comment)=> <Comments  className="comments-row" key={comment.id} text={comment.content} name={comment.user.username} userName={comment.user.email} />):""}
         {/* {replies && replies.map((reply)=> <Replies img={reply.user.image} userName={reply.user.name} userEmail={reply.user.username} userReply={reply.replyingTo} userText={reply.content} />)} */}
       </div>
       <AddComment id={id}/>

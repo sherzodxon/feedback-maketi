@@ -194,6 +194,11 @@ background: transparent;
 .forms_title{
     padding-left: 20px;
 }
+@media screen and (max-width: 1300px){
+.user_options-registered{
+    padding-right: 90px;
+}
+}
 @media screen and (max-width: 990px) {
     .user_options-forms {
         min-height: 350px
@@ -229,7 +234,7 @@ background: transparent;
 
     .user_options-registered,
     .user_options-unregistered {
-        padding: 50px 45px
+        padding: 50px 55px
     }
 }
 

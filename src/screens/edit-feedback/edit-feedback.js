@@ -54,7 +54,7 @@ const EditFeedback = () => {
   const categoryRef =useRef();
   const statusRef=useRef();
   const descriptionRef =useRef();
-  const navigate =useNavigate();
+ const navigate =useNavigate();
 
    const {posts ,setPosts} =useData();
    const [buttonOpen ,setButtonOpen]=useState(false)
@@ -80,7 +80,7 @@ const EditFeedback = () => {
       description:descriptionValue,
       comments:post.comments
      }
-       
+     
      const editingPostIndex = posts.productRequests.findIndex(product => product.id === +id);
     setPosts({
       ...posts,
@@ -89,8 +89,6 @@ const EditFeedback = () => {
     
    }
   
-  
-
    const deletePosts=()=>{
     const editingPostIndex = posts.productRequests.findIndex(product => product.id === +id);
 
@@ -99,7 +97,7 @@ const EditFeedback = () => {
       ...posts.productRequests.splice(editingPostIndex,1)
     }) 
    }
-   //navigate("/")
+   navigate("/")
 
 
   const handleAddOptionClick = () => {

@@ -37,6 +37,7 @@ const formSubmit=(evt)=>{
          ]
 
      }
+     
     setPosts({
         ...posts,
         ...posts.productRequests.splice(postIndex,1,newPost)

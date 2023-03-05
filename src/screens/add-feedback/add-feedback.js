@@ -64,7 +64,7 @@ const handleFormClick=(evt)=>{
        newProductRequests
       ]
     })
-   navigate("/head")
+   navigate("/")
 
   }
 }
@@ -86,7 +86,7 @@ const handleAddOptionChange = (evt) => {
   return (
      <>
      <div className="add-feedback-wrapper">
-      <BackButton className="add-back-button" to={"/head"} children="Go Back"/>
+      <BackButton className="add-back-button" to={"/"} children="Go Back"/>
       <div className="add-container">
        <h2 className="add-feedback-title">Create New Feedback</h2>
        <form className="add-form" id="add-form-id" onSubmit={handleFormClick}>

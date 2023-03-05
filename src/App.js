@@ -20,7 +20,6 @@ function App() {
       <Route path={`/edit-feedback/:id`} element={<EditFeedback />} />
       <Route path="/kanban" element={<Kanban />} />
       <Route path="*" element={<NotFound />} />
-      <Route path="/head" element={<Head />} />
     </Routes>
     </DataProvider>
   )

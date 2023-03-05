@@ -9,103 +9,109 @@ import {
 import { useNavigate } from "react-router-dom"
 
 
-const Control = ({loader,setLoader}) => {
+const Control = ({}) => {
 const navigate =useNavigate();
 
     const [bool, setBool] = useState(true)
+    const [fetch,setFetch]=useState(false)
     const {posts,setPosts} = useData();
-
+    const [data ,setData]=useState(null)
+    useEffect(()=>{
+        setFetch(true)
+       setData({...posts})
+        localStorage.setItem("key" , JSON.stringify(data))
+        console.log(JSON.parse(localStorage.getItem("key")));
+     
+    },[fetch])
+    
     const buttonClick = () => {
         return setBool(!bool)
     }
-    const body = document.querySelector("body");
-    body.className = bool ? "hidden" : "card-hidden"
-
-    const AllValue = posts.productRequests.filter((post) => {
-        return posts.productRequests
-    })
-    const [all, setAll] = useState(AllValue);
-
+    
     const onClickAll = () => {
         setPosts({
-            productRequests: [
-                ...all
-            ]
+            ...data,
         })
     }
 
-    const bugValue = posts.productRequests.filter((post) => {
-        return post.category === "bug"
-    })
-    const [bug, setBug] = useState(bugValue)
-
+  
     const onClickBug = () => {
+        const bugValue =   data.productRequests.filter((post) => {
+            return post.category === "bug"
+        })
+        
         setPosts({
-            productRequests: [
-                ...bug
+            ...posts,
+            productRequests:[
+                ...bugValue
             ]
         })
     }
-    const FeatValue = posts.productRequests.filter((post) => {
-        return post.category === "feature"
-    })
-    const [feature, setFeature] = useState(FeatValue)
+   
     const onClickFeature = () => {
-
+        const featValue = data.productRequests.filter((post) => {
+            return post.category === "feature"
+        })
+       
         setPosts({
+            ...posts,
             productRequests: [
-                ...feature
+                ...featValue
             ]
         })
     }
-    const UiValue = posts.productRequests.filter((post) => {
-        return post.category === "ui"
-    })
-    const [ui, setUi] = useState(UiValue)
+   
+ 
     const onClickUi = () => {
-
+        const uiValue = data.productRequests.filter((post) => {
+            return post.category === "ui"
+        })
         setPosts({
+            ...posts,
             productRequests: [
-                ...ui
+                ...uiValue
             ]
         })
     }
-    const UxValue = posts.productRequests.filter((post) => {
-        return post.category === "ux"
-    })
-    const [ux, setUx] = useState(UxValue)
+    
     const onClickUx = () => {
-
+        const uxValue = data.productRequests.filter((post) => {
+            return post.category === "ux"
+        })
+       
         setPosts({
+            ...posts,
             productRequests: [
-                ...ux
+                ...uxValue
             ]
         })
     }
 
-    const EnValue = posts.productRequests.filter((post) => {
-        return post.category === "enhancement"
-    })
-    const [en, setEn] = useState(EnValue)
+    
     const onClickEn = () => {
-
+        const enValue = data.productRequests.filter((post) => {
+            return post.category === "enhancement"   
+        })
+        
         setPosts({
+            ...posts,
             productRequests: [
-                ...en
+                ...enValue
             ]
         })
     }
     const logOutButton=()=>{
         const currentUser ={
             image: "./assets/user-images/image-zena.jpg",
-            name: "Zena Kelley",
-            username: "velvetround"
+            email:"",
+            username: "velvetround",
+            password:""
         }
             setPosts({
               ...posts,
               currentUser,
             })
-           
+           localStorage.removeItem("data")
           navigate('/')
     }
     return(
